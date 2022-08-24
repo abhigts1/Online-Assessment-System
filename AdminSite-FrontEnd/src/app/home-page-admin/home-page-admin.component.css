@@ -1,0 +1,14 @@
+button {
+    all: unset;
+    cursor: pointer;
+}
+  
+.account{
+    display: flex;
+    flex-direction: row;
+}
+
+.cont{
+    height: 100%;
+    /* background-color: rgb(38, 38, 38); */
+}

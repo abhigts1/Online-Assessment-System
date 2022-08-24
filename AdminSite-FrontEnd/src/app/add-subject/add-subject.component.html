@@ -1,0 +1,22 @@
+<div class="profile-content">
+    <div class="input">
+      <label for="firstName" class="form-label">Subject Name</label>
+      <input [(ngModel)]="subjectName" class="form-control" id="firstName" placeholder="">
+      <div class="invalid-feedback">
+        Valid first name is required.
+      </div>
+    </div>
+
+    
+    <br>
+    <br>
+    <br>
+
+    <div class="btn-group">
+      <div class = "condition">
+          <button type="button" (click) = "addSubject()" class="btn btn-warning">Add</button>    
+      <button type="button" (click) = 'goToSubject()' class="btn btn-danger">Cancel</button>
+    </div>
+</div>
+
+  

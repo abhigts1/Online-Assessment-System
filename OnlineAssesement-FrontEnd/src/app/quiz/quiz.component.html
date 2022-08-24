@@ -1,0 +1,6 @@
+<div class="subjects">
+        <div *ngFor="let item of subjects">
+            <app-subject-card [subjectObj] = 'item'></app-subject-card>  <!-- subjectObj is the name of the variable
+           from the child component-->
+        </div>
+</div>

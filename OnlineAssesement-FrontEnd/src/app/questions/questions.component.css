@@ -1,0 +1,16 @@
+.table{
+    margin-top: 50px;
+}
+
+.cont{
+    background-color: rgb(38, 38, 38);
+    height: 100%;
+}
+
+.sub{
+    margin: 0px 10px 0px auto ; 
+}
+
+.timer{
+    color: aliceblue;
+}

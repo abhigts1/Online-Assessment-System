@@ -1,0 +1,68 @@
+<div class="profile-content">
+    <div class="input">
+      <label for="firstName" class="form-label">USN</label>
+      <input [(ngModel)]="userInfo.usn" class="form-control" id="firstName" placeholder="">
+      <div class="invalid-feedback">
+        Valid first name is required.
+      </div>
+    </div>
+
+    <div class="input">
+      <label for="firstName" class="form-label">User Name</label>
+      <input [(ngModel)]="userInfo.username" type = "text" class="form-control" id="firstName" placeholder="">
+      <div class="invalid-feedback">
+        Valid first name is required.
+      </div>
+    </div>
+
+    <div class="input">
+      <label for="firstName" class="form-label">Full Name</label>
+      <input [(ngModel)]="userInfo.fullName" class="form-control" id="firstName" placeholder="">
+      <div class="invalid-feedback">
+        Valid first name is required.
+      </div>
+    </div>
+
+    <div class="input">
+      <label for="firstName" class="form-label">Phone Number</label>
+      <input [(ngModel)]="userInfo.phoneNumber" class="form-control" id="firstName" placeholder="">
+      <div class="invalid-feedback">
+        Valid first name is required.
+      </div>
+    </div>
+
+    <div class="input">
+      <label for="firstName" class="form-label">Email ID</label>
+      <input [(ngModel)]="userInfo.email" class="form-control" id="firstName" placeholder="">
+      <div class="invalid-feedback">
+        Valid first name is required.
+      </div>
+    </div>
+
+    <div class = "addPassword" *ngIf = "USN == -1">
+      <div class="input">
+        <label for="firstName" class="form-label">Password</label>
+        <input [(ngModel)]="userInfo.password" class="form-control" id="firstName" placeholder="">
+        <div class="invalid-feedback">
+          Valid first name is required.
+        </div>
+      </div>
+   </div>
+    
+    <br>
+    <br>
+    <br>
+
+    <div class="btn-group">
+      <div class = "condition" *ngIf = "USN == -1; else performUpdate">
+          <button type="button" (click) = "addUser()" class="btn btn-warning">Add</button>    
+      </div>
+      <ng-template #performUpdate>
+        <button type="button" (click) = "updateUser()" class="btn btn-warning">Update</button>    
+      </ng-template>
+
+      <button type="button" (click) = 'goToUser()' class="btn btn-danger">Cancel</button>
+    </div>
+</div>
+
+  

@@ -1,0 +1,67 @@
+<div class="profile-content">
+    <div class="input">
+      <label for="firstName" class="form-label">Question</label>
+      <input [(ngModel)]="questionInfo.question" class="form-control" id="firstName" placeholder="">
+      <div class="invalid-feedback">
+        Valid first name is required.
+      </div>
+    </div>
+
+    <div class="input">
+      <label for="firstName" class="form-label">Answer 1</label>
+      <input [(ngModel)]="questionInfo.answer1" type = "text" class="form-control" id="firstName" placeholder="">
+      <div class="invalid-feedback">
+        Valid first name is required.
+      </div>
+    </div>
+
+    <div class="input">
+      <label for="firstName" class="form-label">Answer 2</label>
+      <input [(ngModel)]="questionInfo.answer2" class="form-control" id="firstName" placeholder="">
+      <div class="invalid-feedback">
+        Valid first name is required.
+      </div>
+    </div>
+
+    <div class="input">
+      <label for="firstName" class="form-label">Answer 3</label>
+      <input [(ngModel)]="questionInfo.answer3" class="form-control" id="firstName" placeholder="">
+      <div class="invalid-feedback">
+        Valid first name is required.
+      </div>
+    </div>
+
+    <div class="input">
+      <label for="firstName" class="form-label">Answer 4</label>
+      <input [(ngModel)]="questionInfo.answer4" class="form-control" id="firstName" placeholder="">
+      <div class="invalid-feedback">
+        Valid first name is required.
+      </div>
+    </div>
+
+    <div class="input">
+        <label for="firstName" class="form-label">Correct Answer</label>
+        <input [(ngModel)]="questionInfo.correctAnswer" class="form-control" id="firstName" placeholder="">
+        <div class="invalid-feedback">
+          Valid first name is required.
+        </div>
+      </div>
+    
+    <br>
+    <br>
+    <br>
+
+    <!-- Check this shit -->
+    <div class="btn-group"> 
+      <div class = "condition" *ngIf = "decisionParameter === 'add'; else performUpdate">
+          <button type="button" (click) = "addQuestion()" class="btn btn-warning">Add</button>    
+      </div>
+      <ng-template #performUpdate>
+        <button type="button" (click) = "updateQuestion()" class="btn btn-warning">Update</button>    
+      </ng-template>
+
+      <button type="button" (click) = 'goToQuestion()' class="btn btn-danger">Cancel</button>
+    </div>
+</div>
+
+  
